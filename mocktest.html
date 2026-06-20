@@ -1,55 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>A-One Computer Centre Mock Test</title>
-<style>
-body{font-family:Arial;background:#f4f8ff;text-align:center;}
-.box{
-max-width:700px;
-margin:auto;
-background:white;
-padding:20px;
-margin-top:30px;
-border-radius:10px;
-box-shadow:0 0 10px #ccc;
-}
-button{
-padding:10px 20px;
-background:#0066cc;
-color:white;
-border:none;
-border-radius:5px;
-}
-</style>
-</head>
-<body>
-
-<div class="box">
-<h1>A-One Computer Centre</h1>
-<h2>RGCSM Mock Test</h2>
+<h3>CCC Mock Test</h3>
 
 <p><b>Q1.</b> Computer ka dimaag kise kaha jata hai?</p>
-
-<input type="radio" name="q1"> Mouse<br><br>
-<input type="radio" name="q1"> Keyboard<br><br>
-<input type="radio" name="q1" id="correct"> CPU<br><br>
+<input type="radio" name="q1"> Mouse<br>
+<input type="radio" name="q1"> Keyboard<br>
+<input type="radio" name="q1" id="correct1"> CPU<br>
 <input type="radio" name="q1"> Monitor<br><br>
 
-<button onclick="check()">Submit</button>
+<p><b>Q2.</b> Full form of CPU?</p>
+<input type="radio" name="q2"> Central Process Unit<br>
+<input type="radio" name="q2" id="correct2"> Central Processing Unit<br>
+<input type="radio" name="q2"> Computer Processing Unit<br>
+<input type="radio" name="q2"> Control Processing Unit<br><br>
 
-<p id="result"></p>
-</div>
+<p><b>Q3.</b> WWW ka full form kya hai?</p>
+<input type="radio" name="q3" id="correct3"> World Wide Web<br>
+<input type="radio" name="q3"> Web World Wide<br>
+<input type="radio" name="q3"> World Web Wide<br>
+<input type="radio" name="q3"> Wide World Web<br><br>
 
-<script>
-function check(){
-if(document.getElementById("correct").checked){
-document.getElementById("result").innerHTML="✅ Correct Answer";
-}else{
-document.getElementById("result").innerHTML="❌ Wrong Answer";
-}
-}
-</script>
+<p><b>Q4.</b> Keyboard ek kya hai?</p>
+<input type="radio" name="q4" id="correct4"> Input Device<br>
+<input type="radio" name="q4"> Output Device<br>
+<input type="radio" name="q4"> Storage Device<br>
+<input type="radio" name="q4"> Network Device<br><br>
 
-</body>
-</html>
+<p><b>Q5.</b> Internet Browser ka udaharan?</p>
+<input type="radio" name="q5"> MS Word<br>
+<input type="radio" name="q5" id="correct5"> Google Chrome<br>
+<input type="radio" name="q5"> Paint<br>
+<input type="radio" name="q5"> Calculator<br><br>
