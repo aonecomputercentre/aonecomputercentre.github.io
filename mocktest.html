@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mock Test</title>
+<meta charset="UTF-8">
+<title>A-One Computer Centre Mock Test</title>
+<style>
+body{font-family:Arial;background:#f4f8ff;text-align:center;}
+.box{
+max-width:700px;
+margin:auto;
+background:white;
+padding:20px;
+margin-top:30px;
+border-radius:10px;
+box-shadow:0 0 10px #ccc;
+}
+button{
+padding:10px 20px;
+background:#0066cc;
+color:white;
+border:none;
+border-radius:5px;
+}
+</style>
 </head>
 <body>
 
+<div class="box">
 <h1>A-One Computer Centre</h1>
-<h2>Online Mock Test</h2>
+<h2>RGCSM Mock Test</h2>
 
-<p>CCC Mock Test</p>
-<p>DCA Mock Test</p>
-<p>ADCA Mock Test</p>
-<p>Tally Mock Test</p>
+<p><b>Q1.</b> Computer ka dimaag kise kaha jata hai?</p>
+
+<input type="radio" name="q1"> Mouse<br><br>
+<input type="radio" name="q1"> Keyboard<br><br>
+<input type="radio" name="q1" id="correct"> CPU<br><br>
+<input type="radio" name="q1"> Monitor<br><br>
+
+<button onclick="check()">Submit</button>
+
+<p id="result"></p>
+</div>
+
+<script>
+function check(){
+if(document.getElementById("correct").checked){
+document.getElementById("result").innerHTML="✅ Correct Answer";
+}else{
+document.getElementById("result").innerHTML="❌ Wrong Answer";
+}
+}
+</script>
 
 </body>
 </html>
