@@ -29,3 +29,23 @@
 <input type="radio" name="q5" id="correct5"> Google Chrome<br>
 <input type="radio" name="q5"> Paint<br>
 <input type="radio" name="q5"> Calculator<br><br>
+<br><br>
+
+<button onclick="checkResult()">Submit Test</button>
+
+<h3 id="result"></h3>
+
+<script>
+function checkResult() {
+let score = 0;
+
+if(document.getElementById("correct1").checked) score++;
+if(document.getElementById("correct2").checked) score++;
+if(document.getElementById("correct3").checked) score++;
+if(document.getElementById("correct4").checked) score++;
+if(document.getElementById("correct5").checked) score++;
+
+document.getElementById("result").innerHTML =
+"Your Score: " + score + " / 5";
+}
+</script>
