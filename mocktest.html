@@ -1,4 +1,5 @@
 <h3>CCC Mock Test</h3>
+<h3>Time Left: <span id="timer">30:00</span></h3>
 
 <p><b>Q1.</b> Computer ka dimaag kise kaha jata hai?</p>
 <input type="radio" name="q1"> Mouse<br>
@@ -160,6 +161,24 @@ document.getElementById("result").innerHTML =
 "Percentage: " + percentage + "%<br>" +
 "Result: " + status;
 }
+let time = 1800;
+
+let countdown = setInterval(function(){
+
+let minutes = Math.floor(time / 60);
+let seconds = time % 60;
+
+document.getElementById("timer").innerHTML =
+minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+time--;
+
+if(time < 0){
+clearInterval(countdown);
+alert("Time Over!");
+}
+
+},1000);
 </script>
 </body>
 </html>
