@@ -161,7 +161,7 @@ status = "PASS";
 }
 
 document.getElementById("result").innerHTML =
-"Your Score: " + score + "/10<br>" +
+"Your Score: " + score + "/20<br>" +
 "Percentage: " + percentage + "%<br>" +
 "Result: " + status;
 }
@@ -173,7 +173,7 @@ let minutes = Math.floor(time / 60);
 let seconds = time % 60;
 
 document.getElementById("timer").innerHTML =
-minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+minutes + ":" + (seconds < 20 ? "0" : "") + seconds;
 
 time--;
 
