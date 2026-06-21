@@ -59,6 +59,65 @@
 <input type="radio" name="q10" id="correct10"> Random Access Memory<br>
 <input type="radio" name="q10"> Run Access Memory<br>
 <input type="radio" name="q10"> Rapid Access Memory<br><br>
+<p><b>Q11.</b> ROM ka full form kya hai?</p>
+<input type="radio" name="q11"> Read Only Monitor<br>
+<input type="radio" name="q11" id="correct11"> Read Only Memory<br>
+<input type="radio" name="q11"> Random Only Memory<br>
+<input type="radio" name="q11"> Run Only Memory<br><br>
+
+<p><b>Q12.</b> Excel kis liye use hota hai?</p>
+<input type="radio" name="q12" id="correct12"> Spreadsheet<br>
+<input type="radio" name="q12"> Drawing<br>
+<input type="radio" name="q12"> Music<br>
+<input type="radio" name="q12"> Gaming<br><br>
+
+<p><b>Q13.</b> Internet Explorer kya hai?</p>
+<input type="radio" name="q13" id="correct13"> Browser<br>
+<input type="radio" name="q13"> OS<br>
+<input type="radio" name="q13"> Antivirus<br>
+<input type="radio" name="q13"> Game<br><br>
+
+<p><b>Q14.</b> Email address me @ ka kya matlab hai?</p>
+<input type="radio" name="q14" id="correct14"> At<br>
+<input type="radio" name="q14"> And<br>
+<input type="radio" name="q14"> Add<br>
+<input type="radio" name="q14"> All<br><br>
+
+<p><b>Q15.</b> Printer kis type ki device hai?</p>
+<input type="radio" name="q15"> Input<br>
+<input type="radio" name="q15" id="correct15"> Output<br>
+<input type="radio" name="q15"> Storage<br>
+<input type="radio" name="q15"> Network<br><br>
+
+<p><b>Q16.</b> Ctrl + C ka use?</p>
+<input type="radio" name="q16"> Paste<br>
+<input type="radio" name="q16" id="correct16"> Copy<br>
+<input type="radio" name="q16"> Cut<br>
+<input type="radio" name="q16"> Save<br><br>
+
+<p><b>Q17.</b> Ctrl + V ka use?</p>
+<input type="radio" name="q17" id="correct17"> Paste<br>
+<input type="radio" name="q17"> Copy<br>
+<input type="radio" name="q17"> Cut<br>
+<input type="radio" name="q17"> Save<br><br>
+
+<p><b>Q18.</b> Google kya hai?</p>
+<input type="radio" name="q18" id="correct18"> Search Engine<br>
+<input type="radio" name="q18"> Operating System<br>
+<input type="radio" name="q18"> Printer<br>
+<input type="radio" name="q18"> Hardware<br><br>
+
+<p><b>Q19.</b> Computer Virus kya hai?</p>
+<input type="radio" name="q19" id="correct19"> Harmful Program<br>
+<input type="radio" name="q19"> Browser<br>
+<input type="radio" name="q19"> Hardware<br>
+<input type="radio" name="q19"> Software Update<br><br>
+
+<p><b>Q20.</b> WWW ka full form?</p>
+<input type="radio" name="q20" id="correct20"> World Wide Web<br>
+<input type="radio" name="q20"> World Web Wide<br>
+<input type="radio" name="q20"> Wide World Web<br>
+<input type="radio" name="q20"> Web World Wide<br><br>
 
 <button onclick="checkResult()">Submit Test</button>
 
@@ -78,8 +137,18 @@ if(document.getElementById("correct7").checked) score++;
 if(document.getElementById("correct8").checked) score++;
 if(document.getElementById("correct9").checked) score++;
 if(document.getElementById("correct10").checked) score++;
+  if(document.getElementById("correct11").checked) score++;
+if(document.getElementById("correct12").checked) score++;
+if(document.getElementById("correct13").checked) score++;
+if(document.getElementById("correct14").checked) score++;
+if(document.getElementById("correct15").checked) score++;
+if(document.getElementById("correct16").checked) score++;
+if(document.getElementById("correct17").checked) score++;
+if(document.getElementById("correct18").checked) score++;
+if(document.getElementById("correct19").checked) score++;
+if(document.getElementById("correct20").checked) score++;
 
-let percentage = (score / 10) * 100;
+let percentage = (score / 20 ) * 100;
 
 let status = "FAIL";
 if(percentage >= 50){
