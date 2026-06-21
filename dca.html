@@ -8,6 +8,7 @@
 
 <h1>A-One Computer Centre</h1>
 <h2>DCA Mock Test</h2>
+  <h3>Time Left: <span id="timer">30:00</span></h3>
 
 <p><b>Q1.</b> MS Word kis kaam ke liye use hota hai?</p>
 
@@ -100,6 +101,24 @@ document.getElementById("result").innerHTML =
 "Percentage: " + percentage + "%<br>" +
 "Result: " + status;
 }
+  let time = 1800;
+
+let countdown = setInterval(function(){
+
+let minutes = Math.floor(time / 60);
+let seconds = time % 60;
+
+document.getElementById("timer").innerHTML =
+minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+time--;
+
+if(time < 0){
+clearInterval(countdown);
+alert("Time Over!");
+}
+
+},1000);
 </script>
 
 </body>
