@@ -30,6 +30,35 @@
 <input type="radio" name="q5"> Paint<br>
 <input type="radio" name="q5"> Calculator<br><br>
 <br><br>
+<p><b>Q6.</b> MS Word kis kaam ke liye use hota hai?</p>
+<input type="radio" name="q6" id="correct6"> Document Typing<br>
+<input type="radio" name="q6"> Gaming<br>
+<input type="radio" name="q6"> Music<br>
+<input type="radio" name="q6"> Video Editing<br><br>
+
+<p><b>Q7.</b> Computer ka full form kya hai?</p>
+<input type="radio" name="q7"> Common Operating Machine<br>
+<input type="radio" name="q7" id="correct7"> Common Operating Machine Purposely Used for Technological and Educational Research<br>
+<input type="radio" name="q7"> Central Operating Machine<br>
+<input type="radio" name="q7"> None<br><br>
+
+<p><b>Q8.</b> Email bhejne ke liye kya chahiye?</p>
+<input type="radio" name="q8"> Printer<br>
+<input type="radio" name="q8" id="correct8"> Internet<br>
+<input type="radio" name="q8"> Scanner<br>
+<input type="radio" name="q8"> Mouse<br><br>
+
+<p><b>Q9.</b> WWW ka avishkar kisne kiya?</p>
+<input type="radio" name="q9" id="correct9"> Tim Berners-Lee<br>
+<input type="radio" name="q9"> Bill Gates<br>
+<input type="radio" name="q9"> Steve Jobs<br>
+<input type="radio" name="q9"> Mark Zuckerberg<br><br>
+
+<p><b>Q10.</b> RAM ka full form kya hai?</p>
+<input type="radio" name="q10"> Read Access Memory<br>
+<input type="radio" name="q10" id="correct10"> Random Access Memory<br>
+<input type="radio" name="q10"> Run Access Memory<br>
+<input type="radio" name="q10"> Rapid Access Memory<br><br>
 
 <button onclick="checkResult()">Submit Test</button>
 
@@ -44,9 +73,14 @@ if(document.getElementById("correct2").checked) score++;
 if(document.getElementById("correct3").checked) score++;
 if(document.getElementById("correct4").checked) score++;
 if(document.getElementById("correct5").checked) score++;
+  if(document.getElementById("correct6").checked) score++;
+if(document.getElementById("correct7").checked) score++;
+if(document.getElementById("correct8").checked) score++;
+if(document.getElementById("correct9").checked) score++;
+if(document.getElementById("correct10").checked) score++;
 
 document.getElementById("result").innerHTML =
-"Your Score: " + score + " / 5";
+"Your Score: " + score + " / 10";
 }
 </script>
 </body>
