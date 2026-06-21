@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DCA Mock Test</title>
+</head>
+<body>
+
+<h1>A-One Computer Centre</h1>
+<h2>DCA Mock Test</h2>
+
+<p><b>Q1.</b> MS Word kis kaam ke liye use hota hai?</p>
+
+<input type="radio" name="q1" id="correct1"> Document Typing<br>
+<input type="radio" name="q1"> Gaming<br>
+<input type="radio" name="q1"> Music<br>
+<input type="radio" name="q1"> Video Editing<br><br>
+
+<button onclick="checkResult()">Submit Test</button>
+
+<h3 id="result"></h3>
+
+<script>
+function checkResult(){
+let score = 0;
+
+if(document.getElementById("correct1").checked) score++;
+
+document.getElementById("result").innerHTML =
+"Your Score: " + score + "/1";
+}
+</script>
+
+</body>
+</html>
