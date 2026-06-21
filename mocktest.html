@@ -79,8 +79,17 @@ if(document.getElementById("correct8").checked) score++;
 if(document.getElementById("correct9").checked) score++;
 if(document.getElementById("correct10").checked) score++;
 
+let percentage = (score / 10) * 100;
+
+let status = "FAIL";
+if(percentage >= 50){
+status = "PASS";
+}
+
 document.getElementById("result").innerHTML =
-"Your Score: " + score + " / 10";
+"Your Score: " + score + "/10<br>" +
+"Percentage: " + percentage + "%<br>" +
+"Result: " + status;
 }
 </script>
 </body>
