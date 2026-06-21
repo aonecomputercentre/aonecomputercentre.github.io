@@ -38,6 +38,35 @@
 <input type="radio" name="q5"> Ctrl + V<br>
 <input type="radio" name="q5" id="correct5"> Ctrl + S<br>
 <input type="radio" name="q5"> Ctrl + X<br><br>
+  <p><b>Q6.</b> MS Excel me formula kis sign se start hota hai?</p>
+<input type="radio" name="q6" id="correct6"> =<br>
+<input type="radio" name="q6"> +<br>
+<input type="radio" name="q6"> -<br>
+<input type="radio" name="q6"> *<br><br>
+
+<p><b>Q7.</b> PowerPoint file extension kya hoti hai?</p>
+<input type="radio" name="q7"> .docx<br>
+<input type="radio" name="q7" id="correct7"> .pptx<br>
+<input type="radio" name="q7"> .xlsx<br>
+<input type="radio" name="q7"> .txt<br><br>
+
+<p><b>Q8.</b> Computer me data ko kya kehte hain?</p>
+<input type="radio" name="q8"> Software<br>
+<input type="radio" name="q8" id="correct8"> Information<br>
+<input type="radio" name="q8"> Hardware<br>
+<input type="radio" name="q8"> Virus<br><br>
+
+<p><b>Q9.</b> Folder ka use kis liye hota hai?</p>
+<input type="radio" name="q9" id="correct9"> Files rakhne ke liye<br>
+<input type="radio" name="q9"> Internet chalane ke liye<br>
+<input type="radio" name="q9"> Game khelne ke liye<br>
+<input type="radio" name="q9"> Print karne ke liye<br><br>
+
+<p><b>Q10.</b> Ctrl + P ka use kya hai?</p>
+<input type="radio" name="q10"> Paste<br>
+<input type="radio" name="q10"> Copy<br>
+<input type="radio" name="q10" id="correct10"> Print<br>
+<input type="radio" name="q10"> Save<br><br>
 
 <button onclick="checkResult()">Submit Test</button>
 
@@ -52,8 +81,13 @@ if(document.getElementById("correct1").checked) score++;
 if(document.getElementById("correct3").checked) score++;
 if(document.getElementById("correct4").checked) score++;
 if(document.getElementById("correct5").checked) score++;
+  if(document.getElementById("correct6").checked) score++;
+if(document.getElementById("correct7").checked) score++;
+if(document.getElementById("correct8").checked) score++;
+if(document.getElementById("correct9").checked) score++;
+if(document.getElementById("correct10").checked) score++;
 
-let percentage = (score / 5) * 100;
+let percentage = (score / 10) * 100;
 
 let status = "FAIL";
 
@@ -62,7 +96,7 @@ status = "PASS";
 }
 
 document.getElementById("result").innerHTML =
-"Your Score: " + score + "/5<br>" +
+"Your Score: " + score + "/10<br>" +
 "Percentage: " + percentage + "%<br>" +
 "Result: " + status;
 }
