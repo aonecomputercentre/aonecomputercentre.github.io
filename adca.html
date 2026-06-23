@@ -38,6 +38,35 @@
 <input type="radio" name="q5"> Printer<br>
 <input type="radio" name="q5"> Scanner<br>
 <input type="radio" name="q5"> Speaker<br><br>
+  <p><b>Q6.</b> CSS ka use kis liye hota hai?</p>
+<input type="radio" name="q6" id="correct6"> Website Design<br>
+<input type="radio" name="q6"> Printing<br>
+<input type="radio" name="q6"> Scanning<br>
+<input type="radio" name="q6"> Gaming<br><br>
+
+<p><b>Q7.</b> JavaScript kis type ki language hai?</p>
+<input type="radio" name="q7"> Database<br>
+<input type="radio" name="q7" id="correct7"> Programming Language<br>
+<input type="radio" name="q7"> Browser<br>
+<input type="radio" name="q7"> Operating System<br><br>
+
+<p><b>Q8.</b> Website ka address kya kehlata hai?</p>
+<input type="radio" name="q8"> Folder<br>
+<input type="radio" name="q8"> File<br>
+<input type="radio" name="q8" id="correct8"> URL<br>
+<input type="radio" name="q8"> Driver<br><br>
+
+<p><b>Q9.</b> HTML me image lagane ke liye kaunsa tag use hota hai?</p>
+<input type="radio" name="q9" id="correct9"> img<br>
+<input type="radio" name="q9"> table<br>
+<input type="radio" name="q9"> body<br>
+<input type="radio" name="q9"> head<br><br>
+
+<p><b>Q10.</b> Internet par data bhejne ka protocol kaunsa hai?</p>
+<input type="radio" name="q10" id="correct10"> HTTP<br>
+<input type="radio" name="q10"> RAM<br>
+<input type="radio" name="q10"> CPU<br>
+<input type="radio" name="q10"> ROM<br><br>
 
 <button onclick="checkResult()">Submit Test</button>
 
@@ -52,8 +81,13 @@ if(document.getElementById("correct1").checked) score++;
 if(document.getElementById("correct3").checked) score++;
 if(document.getElementById("correct4").checked) score++;
 if(document.getElementById("correct5").checked) score++;
+  if(document.getElementById("correct6").checked) score++;
+if(document.getElementById("correct7").checked) score++;
+if(document.getElementById("correct8").checked) score++;
+if(document.getElementById("correct9").checked) score++;
+if(document.getElementById("correct10").checked) score++;
 
-let percentage = (score / 5) * 100;
+let percentage = (score / 10) * 100;
 
 let status = "FAIL";
 
@@ -62,7 +96,7 @@ status = "PASS";
 }
 
 document.getElementById("result").innerHTML =
-"Your Score: " + score + "/5<br>" +
+"Your Score: " + score + "/10<br>" +
 "Percentage: " + percentage + "%<br>" +
 "Result: " + status;
 }
