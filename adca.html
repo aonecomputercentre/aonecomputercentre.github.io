@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ADCA Mock Test</title>
+</head>
+<body>
+
+<h1>A-One Computer Centre</h1>
+<h2>ADCA Mock Test</h2>
+
+<p><b>Q1.</b> HTML ka full form kya hai?</p>
+
+<input type="radio" name="q1"> Hyper Text Mark Language<br>
+<input type="radio" name="q1" id="correct1"> Hyper Text Markup Language<br>
+<input type="radio" name="q1"> High Text Markup Language<br>
+<input type="radio" name="q1"> Hyper Transfer Markup Language<br><br>
+
+<button onclick="checkResult()">Submit Test</button>
+
+<h3 id="result"></h3>
+
+<script>
+function checkResult(){
+let score = 0;
+
+if(document.getElementById("correct1").checked) score++;
+
+document.getElementById("result").innerHTML =
+"Your Score: " + score + "/1";
+}
+</script>
+
+</body>
+</html>
