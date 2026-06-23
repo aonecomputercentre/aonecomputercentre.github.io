@@ -15,6 +15,29 @@
 <input type="radio" name="q1" id="correct1"> Hyper Text Markup Language<br>
 <input type="radio" name="q1"> High Text Markup Language<br>
 <input type="radio" name="q1"> Hyper Transfer Markup Language<br><br>
+  <p><b>Q2.</b> CSS ka full form kya hai?</p>
+<input type="radio" name="q2"> Computer Style Sheet<br>
+<input type="radio" name="q2" id="correct2"> Cascading Style Sheets<br>
+<input type="radio" name="q2"> Creative Style Sheet<br>
+<input type="radio" name="q2"> Color Style Sheet<br><br>
+
+<p><b>Q3.</b> JavaScript ka use kis liye hota hai?</p>
+<input type="radio" name="q3"> Photo Editing<br>
+<input type="radio" name="q3" id="correct3"> Website Interactive Banane Ke Liye<br>
+<input type="radio" name="q3"> Printing<br>
+<input type="radio" name="q3"> Scanning<br><br>
+
+<p><b>Q4.</b> HTML file extension kya hoti hai?</p>
+<input type="radio" name="q4" id="correct4"> .html<br>
+<input type="radio" name="q4"> .docx<br>
+<input type="radio" name="q4"> .xlsx<br>
+<input type="radio" name="q4"> .pptx<br><br>
+
+<p><b>Q5.</b> Internet par website dekhne ke liye kya use hota hai?</p>
+<input type="radio" name="q5" id="correct5"> Browser<br>
+<input type="radio" name="q5"> Printer<br>
+<input type="radio" name="q5"> Scanner<br>
+<input type="radio" name="q5"> Speaker<br><br>
 
 <button onclick="checkResult()">Submit Test</button>
 
@@ -25,6 +48,10 @@ function checkResult(){
 let score = 0;
 
 if(document.getElementById("correct1").checked) score++;
+  if(document.getElementById("correct2").checked) score++;
+if(document.getElementById("correct3").checked) score++;
+if(document.getElementById("correct4").checked) score++;
+if(document.getElementById("correct5").checked) score++;
 
 document.getElementById("result").innerHTML =
 "Your Score: " + score + "/1";
