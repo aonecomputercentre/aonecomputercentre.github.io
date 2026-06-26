@@ -41,7 +41,7 @@ color:#004a99;
 
 <p>This is to certify that</p>
 
-<h2>_____________________</h2>
+<h2 id="studentName">Student Name</h2>
 
 <p>has successfully completed the</p>
 
@@ -65,6 +65,13 @@ Print Certificate
 </button>
 
 </div>
+  <script>
+let name = localStorage.getItem("studentName");
+
+if(name){
+document.getElementById("studentName").innerHTML = name;
+}
+</script>
 
 </body>
 </html>
