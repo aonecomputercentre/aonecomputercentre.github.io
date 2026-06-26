@@ -86,8 +86,7 @@ Your Future Our Responsibility
   <h2>Student Registration</h2>
 <form>
 
-<input type="text" placeholder="Student Name" required>
-<br><br>
+<input type="text" id="studentNameInput" placeholder="Student Name" required>
 
 <input type="text" placeholder="Father Name" required>
 <br><br>
@@ -108,9 +107,17 @@ Your Future Our Responsibility
 
 <br><br>
 
-<button type="button" onclick="window.location.href='mocktest.html'">
+<button type="button" onclick="startTest()">
 Register & Start Test
 </button>
+
+<script>
+function startTest(){
+let name = document.getElementById("studentNameInput").value;
+localStorage.setItem("studentName", name);
+window.location.href='mocktest.html';
+}
+</script>
 
 </form>
 
