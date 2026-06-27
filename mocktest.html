@@ -119,6 +119,65 @@
 <input type="radio" name="q20"> World Web Wide<br>
 <input type="radio" name="q20"> Wide World Web<br>
 <input type="radio" name="q20"> Web World Wide<br><br>
+<p><b>Q21.</b> CPU ka full form kya hai?</p>
+<input type="radio" name="q21"> Central Power Unit<br>
+<input type="radio" name="q21" id="correct21"> Central Processing Unit<br>
+<input type="radio" name="q21"> Computer Processing Unit<br>
+<input type="radio" name="q21"> Control Processing Unit<br><br>
+
+<p><b>Q22.</b> Monitor kis type ka device hai?</p>
+<input type="radio" name="q22" id="correct22"> Output Device<br>
+<input type="radio" name="q22"> Input Device<br>
+<input type="radio" name="q22"> Storage Device<br>
+<input type="radio" name="q22"> Network Device<br><br>
+
+<p><b>Q23.</b> Keyboard kya hai?</p>
+<input type="radio" name="q23" id="correct23"> Input Device<br>
+<input type="radio" name="q23"> Output Device<br>
+<input type="radio" name="q23"> Storage Device<br>
+<input type="radio" name="q23"> Software<br><br>
+
+<p><b>Q24.</b> WWW ka full form kya hai?</p>
+<input type="radio" name="q24"> World Wide Work<br>
+<input type="radio" name="q24" id="correct24"> World Wide Web<br>
+<input type="radio" name="q24"> Web World Wide<br>
+<input type="radio" name="q24"> Wide Web World<br><br>
+
+<p><b>Q25.</b> Email bhejne ke liye kya chahiye?</p>
+<input type="radio" name="q25"> Printer<br>
+<input type="radio" name="q25" id="correct25"> Internet<br>
+<input type="radio" name="q25"> Scanner<br>
+<input type="radio" name="q25"> Speaker<br><br>
+
+<p><b>Q26.</b> RAM ka full form kya hai?</p>
+<input type="radio" name="q26" id="correct26"> Random Access Memory<br>
+<input type="radio" name="q26"> Read Access Memory<br>
+<input type="radio" name="q26"> Run Access Memory<br>
+<input type="radio" name="q26"> Real Access Memory<br><br>
+
+<p><b>Q27.</b> Excel me row kis direction me hoti hai?</p>
+<input type="radio" name="q27" id="correct27"> Horizontal<br>
+<input type="radio" name="q27"> Vertical<br>
+<input type="radio" name="q27"> Diagonal<br>
+<input type="radio" name="q27"> Circular<br><br>
+
+<p><b>Q28.</b> Excel me column kis direction me hoti hai?</p>
+<input type="radio" name="q28"> Horizontal<br>
+<input type="radio" name="q28" id="correct28"> Vertical<br>
+<input type="radio" name="q28"> Diagonal<br>
+<input type="radio" name="q28"> Circular<br><br>
+
+<p><b>Q29.</b> Ctrl + C ka use kya hai?</p>
+<input type="radio" name="q29" id="correct29"> Copy<br>
+<input type="radio" name="q29"> Paste<br>
+<input type="radio" name="q29"> Cut<br>
+<input type="radio" name="q29"> Save<br><br>
+
+<p><b>Q30.</b> Ctrl + V ka use kya hai?</p>
+<input type="radio" name="q30"> Copy<br>
+<input type="radio" name="q30" id="correct30"> Paste<br>
+<input type="radio" name="q30"> Cut<br>
+<input type="radio" name="q30"> Save<br><br>
 
 <button onclick="checkResult()">Submit Test</button>
 
@@ -152,8 +211,18 @@ if(document.getElementById("correct17").checked) score++;
 if(document.getElementById("correct18").checked) score++;
 if(document.getElementById("correct19").checked) score++;
 if(document.getElementById("correct20").checked) score++;
+  if(document.getElementById("correct21").checked) score++;
+if(document.getElementById("correct22").checked) score++;
+if(document.getElementById("correct23").checked) score++;
+if(document.getElementById("correct24").checked) score++;
+if(document.getElementById("correct25").checked) score++;
+if(document.getElementById("correct26").checked) score++;
+if(document.getElementById("correct27").checked) score++;
+if(document.getElementById("correct28").checked) score++;
+if(document.getElementById("correct29").checked) score++;
+if(document.getElementById("correct30").checked) score++;
 
-let percentage = (score / 20 ) * 100;
+let percentage = (score / 30 ) * 100;
   localStorage.setItem("score", score);
 localStorage.setItem("percentage", percentage);
 localStorage.setItem("status", status);
@@ -166,7 +235,7 @@ localStorage.setItem("score", score);
 localStorage.setItem("percentage", percentage);
 localStorage.setItem("status", status);
 document.getElementById("result").innerHTML =
-"Your Score: " + score + "/20<br>" +
+"Your Score: " + score + "/30<br>" +
 "Percentage: " + percentage + "%<br>" +
 "Result: " + status;
 }
