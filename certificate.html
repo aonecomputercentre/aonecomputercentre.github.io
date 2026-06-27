@@ -67,9 +67,15 @@ Print Certificate
   <script>
 window.onload = function() {
 let name = localStorage.getItem("studentName");
+  let score = localStorage.getItem("score");
+let percentage = localStorage.getItem("percentage");
+let status = localStorage.getItem("status");
 
 if(name){
 document.getElementById("studentName").innerHTML = name;
+  document.getElementById("score").innerHTML = score;
+document.getElementById("percentage").innerHTML = percentage + "%";
+document.getElementById("status").innerHTML = status;
 }
 }
 </script>
