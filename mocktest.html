@@ -159,7 +159,9 @@ let status = "FAIL";
 if(percentage >= 50){
 status = "PASS";
 }
-
+localStorage.setItem("score", score);
+localStorage.setItem("percentage", percentage);
+localStorage.setItem("status", status);
 document.getElementById("result").innerHTML =
 "Your Score: " + score + "/20<br>" +
 "Percentage: " + percentage + "%<br>" +
